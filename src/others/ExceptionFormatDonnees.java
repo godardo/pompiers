@@ -1,3 +1,5 @@
+package others;
+
 
 // Pur typage
 public class ExceptionFormatDonnees extends Exception {
