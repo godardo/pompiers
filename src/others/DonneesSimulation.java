@@ -2,12 +2,12 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package projet.apoo;
+package others;
 
 /**
  *
  * @author corteshs
  */
-class DonneesSimulation {
+public class DonneesSimulation {
     
 }

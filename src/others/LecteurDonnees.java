@@ -1,3 +1,5 @@
+package others;
+
 // Ensimag 2013-14 - 2A APOO  
 
 import java.io.*;
