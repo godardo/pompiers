@@ -1,0 +1,37 @@
+# carte KO --> il y a le feu au lac!
+
+# Un exemple de carte 4x4
+4 4 100
+# ligne 0
+TERRE_CULTIVEE 150
+TERRE_CULTIVEE 100
+TERRE_CULTIVEE 150
+TERRE_CULTIVEE 200
+# ligne 1
+ROCHE_NUE 300
+LAC 100
+LAC 100
+TERRE_CULTIVEE 200
+# ligne 2
+ROCHE_NUE 200
+COURS_D_EAU 100 5  # profondeur de 5m
+TERRE_CULTIVEE 100
+FORET 100
+# ligne 3
+TERRE_CULTIVEE 90
+COURS_D_EAU 90    # profondeur par défaut
+FORET 90 0.8      # densité forêt specifique
+FORET 200         # densité forêt par défaut
+
+# Incendies
+3
+1 1 0.3     # KO --> il y a le feu au lac!
+2 2 1.0
+2 3 0.5
+
+# Robots
+3
+0 0 DRONE
+3 1 DRONE 60.0    # vitesse spécifique
+3 3 CHENILLES
+
