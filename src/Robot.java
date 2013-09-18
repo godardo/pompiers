@@ -23,7 +23,7 @@ public abstract class Robot {
     
 
     /**
-     *
+     *returns the necessary duration for filling the tank
      * @return
      */
     public int getDureeRemplissage() {
@@ -31,29 +31,33 @@ public abstract class Robot {
     }
 
     /**
-     *
-     * @param dir
+     *moves the robot from it's current position to a new one if it's possible
+     * @param dir new direction
      * @return
      */
     public abstract int deplacer(Direction dir);
 
     /**
-     *
-     * @param c
-     * @return
+     *Returns the speed of the robot on the "case"
+     * @param c "case"
+     * @return speed
      */
     public abstract double getVitesse(Case c);
 
     /**
-     *
-     * @param depart
-     * @param dir
+     *returns the speed  of  the robot, assuming that it is  on the "case" 
+     * depart and also, he wants to access the adjacent case inside the direction given.
+     * 
+     * The returned value depends on this values (depart and arrival)
+     * @param depart "case from where it comes
+     * @param dir new direction
      * @return
      */
     public abstract double getVitesse(Case depart, Direction dir);
 
     /**
-     *
+     *returns the speed  of  the robot, assuming that he wants to access the 
+     * adjacent case inside the direction given from where it is right now.
      * @param dir
      * @return
      */
